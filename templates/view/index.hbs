@@ -17,29 +17,11 @@
     <link rel="stylesheet" href="sass/styles.css">
 </head>
 <body>
-    <header>
-       <div class="section" id="logo">
-            <img src="images/aeroplane.png" alt="" height="30px" width="30px">
-            FlightDekho
-       </div>
+    {{>header}}
 
-        <div class="menus">
-            <ul>
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Contact Us</li>
-                <li>Help</li>
-            </ul>
-        </div>
+    
 
-        <div class="user">
-            <a ><i class="fa-solid fa-user"></i></i></a>
-        </div>
 
-        <div class="menu-button">
-             <i class="fa-solid fa-bars" style="color: #213250;"></i>
-        </div>
-    </header>
 
     <div class="two-phases">
         <div class="left">
@@ -81,5 +63,22 @@
         Created By Himanshu Bhole
     </footer>
 
+
+    <script >
+
+    function getMobileheader(){
+    var navbar = document.getElementById("mobile_head");
+    if(navbar.style.display === "none" || navbar.style.display === ""){
+        navbar.style.display = "block";
+    }
+    else{
+        navbar.style.display ="none";
+    }
+    console.log("printed out style");
+}
+
+</script>
+
+    
 </body>
 </html>

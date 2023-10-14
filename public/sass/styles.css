@@ -73,6 +73,26 @@ header{
     border-radius: 45px;
 }
 
+/* pressed Button style list style */
+
+.header_phone{
+    background-color: #fff;
+    height: auto;
+    display: none;}
+.header_phone ul li{
+    text-align: center;
+    list-style: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin: 0.2em 1.5em;
+    padding: 0.2em 1.5em;
+}
+
+.header_phone ul li:hover{
+    color:grey;
+
+}
+
 /* Menu button Here */
 .menu-button{
     padding: 0 0em;
@@ -86,6 +106,10 @@ header{
     color:#fff;
     background-color: #000;
     border-radius: 45px;
+}
+
+.menu-button i:hover{
+    color:#fff;
 }
 /* Tw0 Phases Herer  */
 .two-phases{
@@ -209,14 +233,24 @@ footer{
         width: auto;
     }
 
+/* 
+    .header_phone{
+        display: flex;
+        flex-direction: column;
+    } */
+
+
     .menu-button{
         display: inline-block;
         width: 10%;
     }
 
     .menus{
-        display: none;
+       position:absolute;
+       top:-1450px;
+       left:-1450px;
     }
+
     .section{
         width: 80%;
     }
