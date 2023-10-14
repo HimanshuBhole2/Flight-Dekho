@@ -8,6 +8,9 @@ html{
 }
 body{
     background-color:#000;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 header{
     background-color: #fff;
@@ -16,6 +19,7 @@ header{
     width: 100vw;
     line-height: 4.5rem;
     text-align: center;
+    clear:both;
 
 }
 
@@ -39,11 +43,6 @@ header{
     width: 77%;
 }
 
-.user{
-    /* border:2px solid magenta; */
-    display: inline-block;
-    width: 10%;
-}
 
 .menus ul li{
     float:left;
@@ -58,23 +57,46 @@ header{
     color:grey;
 
 }
-
+/* User Button here */
 .user{
-    font-size: 1.3rem;
-    margin: 0 0.2rem;
+    display: inline-block;
+    width: 10%;
     padding: 0 0em;
     text-align: center;
     font-size: 3rem;
     margin: 0.3rem 0 ;
 }
 
+.user:hover{
+    color:#fff;
+    background-color: #000;
+    border-radius: 45px;
+}
+
+/* Menu button Here */
+.menu-button{
+    padding: 0 0em;
+    text-align: center;
+    font-size: 3rem;
+    margin: 0.3rem 0 ;
+    display: none;
+}
+
+.menu-button:hover{
+    color:#fff;
+    background-color: #000;
+    border-radius: 45px;
+}
+/* Tw0 Phases Herer  */
 .two-phases{
     display: inline-block;
     width: 100vw;
     color:#fff;
-    height: 65vh;
+    padding: 4rem 2rem;
+    height: auto;
     margin: 2rem 0;
     text-align: center;
+
 
 }
 .left{
@@ -86,6 +108,8 @@ header{
     height: 100%;
     justify-content: center;
     align-items: center;
+    font-size: 10px;
+    margin: 2rem 0;
 }
 .right{
     float:right;
@@ -95,16 +119,17 @@ header{
     height: 100%;
     align-items: center;
     justify-content: center;
+    margin: 2rem 0;
 }
 
 .left h3{
-    font-size: 2rem;
+    font-size: 2em;
     
 
 }
 
 .left h1{
-    font-size: 5rem;
+    font-size: 5em;
     margin: 0 1rem;
     margin-top: 0px;
     margin-bottom: 0.8rem;
@@ -114,14 +139,14 @@ header{
 }
 
 .left p{
-    font-size: 1.5rem;
+    font-size: 1.5em;
     margin: 0.8rem 1rem;
     padding:0.8rem 1rem;
 }
 
 .left input{
     /* background-color: #fff; */
-    font-size: 1.8rem;
+    font-size: 1.8em;
     margin: 0.8rem 1rem;
     padding:0.8rem 1rem;
     cursor: pointer;
@@ -136,8 +161,65 @@ header{
 /* Caruausal item for home */
 
 .carousel-item img{
-    width: 450px;
-    height: 350px;
+    width: 30rem;
+    height: 25rem;
     border-radius: 5px;
-
 } 
+
+
+
+
+
+
+
+
+
+/* footer */
+
+footer{
+    background-color: rgb(134, 131, 131);
+    line-height: 4rem;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: auto;
+    width: 100%;
+}
+
+
+
+/* Media Query  */
+
+@media (max-width:800px) {
+    .two-phases{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .left{
+        margin: 5rem 0;
+       height: auto;
+       width: auto;
+
+    }
+    .right{
+        margin: 5rem 0;
+        height: auto;
+        width: auto;
+    }
+
+    .menu-button{
+        display: inline-block;
+        width: 10%;
+    }
+
+    .menus{
+        display: none;
+    }
+    .section{
+        width: 80%;
+    }
+
+
+}
