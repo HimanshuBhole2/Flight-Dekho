@@ -16,6 +16,9 @@ app.get("/",(req,res)=>{
     res.render('index.hbs')
 })
 
+app.get("/testing",(req,res)=>{
+    res.render('test.hbs')
+})
 
 app.listen(port,()=>{
     console.log('Our Site is Working Fine');

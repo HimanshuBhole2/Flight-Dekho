@@ -72,14 +72,48 @@ header{
     background-color: #000;
     border-radius: 45px;
 }
+/* User sign In Block design (Sign In POP up)*/
+
+.sing_in_option{
+    display: none;
+    position: absolute;
+    top:6rem;
+    right:0.3rem;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 18rem;
+    height: 13rem;
+    z-index: 3;
+    border: 1px solid black;
+}
+
+.sing_in_option ul li{
+    
+    text-align: center;
+    list-style: none;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    margin: 0.2em 1.5em;
+    padding: 0.2em 1.5em;
+}
+
+.sing_in_option ul li:hover{
+    background-color: rgb(165, 157, 157);
+}
 
 /* pressed Button style list style */
 
 .header_phone{
+    /* position:absolute; */
+
     background-color: #fff;
     height: auto;
-    display: none;}
+    display: none;
+
+}
 .header_phone ul li{
+    
     text-align: center;
     list-style: none;
     cursor: pointer;
@@ -111,6 +145,66 @@ header{
 .menu-button i:hover{
     color:#fff;
 }
+
+/* Sign Menu heare*/
+
+.signpop{
+    background-color: #fff;
+    color:#000;
+    height: 400px;
+    width: 300px;
+    flex-direction: column;
+    justify-content: center;
+    padding:1.5rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+
+}
+#singinPop{
+    display: none;
+}
+/* input boxes */
+.set{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:0 3rem;
+    padding:1rem;
+}
+.pop_cont{
+    margin:1rem ;
+}
+
+.set input[type=text] {
+    background-color: #e8dede;
+    border:none;
+    width: 100%;
+    line-height: 5px;
+    padding:3px 15px;
+    border-radius: 50px;
+}
+.create_acc_button{
+    width: 40%;
+    height: 8%;
+    border:none;
+    background-color: #000;
+    color:#e8dede;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 2rem 3rem;
+    align-self: center;
+}
+.create_acc_button:hover{
+    background-color: #e8dede;
+    color:#000;
+}
+
+
 /* Tw0 Phases Herer  */
 .two-phases{
     display: inline-block;
@@ -233,11 +327,11 @@ footer{
         width: auto;
     }
 
-/* 
-    .header_phone{
+
+    /* .header_phone{
         display: flex;
         flex-direction: column;
-    } */
+    }  */
 
 
     .menu-button{
@@ -247,6 +341,7 @@ footer{
 
     .menus{
        position:absolute;
+       display: none;
        top:-1450px;
        left:-1450px;
     }
@@ -254,6 +349,4 @@ footer{
     .section{
         width: 80%;
     }
-
-
 }

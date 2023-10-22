@@ -17,12 +17,15 @@
     <link rel="stylesheet" href="sass/styles.css">
 </head>
 <body>
-    {{>header}}
+   
+   
+   {{>header}}
 
+    
     
 
 
-
+    {{!-- /THis is the two Phases of the pages --}}
     <div class="two-phases">
         <div class="left">
             <h3>Welcome to the site</h3>
@@ -64,20 +67,7 @@
     </footer>
 
 
-    <script >
 
-    function getMobileheader(){
-    var navbar = document.getElementById("mobile_head");
-    if(navbar.style.display === "none" || navbar.style.display === ""){
-        navbar.style.display = "block";
-    }
-    else{
-        navbar.style.display ="none";
-    }
-    console.log("printed out style");
-}
-
-</script>
 
     
 </body>

@@ -4,7 +4,7 @@
             FlightDekho
        </div>
 
-        <div class="menus">
+        <div class="menus" div="head-menu">
             <ul>
                 <li>Home</li>
                 <li>About Us</li>
@@ -13,16 +13,26 @@
             </ul>
         </div>
 
-        <div class="user">
-            <a ><i class="fa-solid fa-user"></i></a>
+        <div  class="user" onclick="printsome2()">
+            <a><i class="fa-solid fa-user"></i></a>
         </div>
 
-        <div class="menu-button">
-             <i  onclick="getMobileheader()" class="fa-solid fa-bars"></i>
+        <div class="menu-button"  onclick="printsome()">
+             <i  class="fa-solid fa-bars"></i>
         </div>
     </header>
 
-       <div class="header_phone" id="mobile_head">
+    <div class="sing_in_option" id="signIn">
+        <ul>
+            <li onclick="show_sign_pop()">Sign In</li>
+            <li>My Activity</li>
+            <li>My Order</li>
+            <li>Edit Profile</li>
+            <li>Setings</li>
+        </ul>
+    </div>
+
+    <div class="header_phone" id="mobile_head">
         <ul>
             <li>Home</li>
             <li>About Us</li>
@@ -31,13 +41,20 @@
         </ul>
     </div>
 
-    <script>
-        function getMobileheader() {
-            var navbar = document.getElementById("mobile_head");
-            if (navbar.style.display === "none" || navbar.style.display === "") {
-                navbar.style.display = "block";
-            } else {
-                navbar.style.display = "none";
-            }
-        }
-    </script>
+    <div class="signpop" id="singinPop">
+        <div class="set">
+            <label  for="username">UserName:</label>
+        <input  type="text" id="username" placeholder="Please put username here">
+        </div>
+        <div class="set">
+        <label  for="email">Email: </label>
+        <input  type="text" id="email" placeholder="Please put email here"></div>
+        <div class="set">
+        <label  for="password">Password: </label>
+        <input  type="text" id="password" placeholder="Please put password here">
+        </div>
+        <button class="create_acc_button" id="create_button" onclick="put_database()">Create Account</button>
+    </div>
+
+<script src="../js/header.js"></script>
+<script src="../js/login_info.js"></script>
