@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <%- include(partials.links_head) %>
+</head>
+<body>
+  <%- include(partials.header) %>
+
+        <section class='coloured-section'>
+
+        <div class = 'container'>
+
+            <div class ="flight-app">
+                <h2> FliGhtDekho</h2>
+
+                <div class="form-container">
+                    <form method="post" action="/flights" >
+                        <div class="row">
+                          <div class="col">
+                            <label for="departure">Depatrure from : </label>
+                            <input type="text" name="departure" class="form-control" id = 'departure' placeholder="Departure from">
+                          </div>
+                          <div class="col">
+                            <label for="arival">Arival from : </label>
+                            <input type="text" name ="arival" class="form-control" id = "arival"placeholder="Arrive to">
+                          </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                              <label for="audlts">Number of Adults : </label>
+                              <input type="text" name="adults" class="form-control" id = "audlts" placeholder="Number of Adults">
+                            </div>
+                            <div class="col">
+                              <label for="audlts">Number of Chidlrens : </label>
+                              <input type="text" name = "childrens" class="form-control" placeholder="Number of Childerne">
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col">
+                              <label for="infants">Number of Infants : </label>
+                              <input type="text" name="infants" class="form-control" id="infants" value="0" placeholder="Number of infants">
+                            </div>
+                            <div class="col">
+                              <label for="date">Date of depature : </label>
+                              <input type="text" name="date" class="form-control" id="date" placeholder="YYYY-MM-DD">
+
+                            </div>
+                            <div class="col">
+                              <label for="cabin_class">Cabin Class:</label>
+                              <select class="form-control" name = "cabin_class"id="exampleFormControlSelect1">
+                                <option>Business</option>
+                                <option>Economy</option>
+                                <option>First</option>
+                                <option>Premium_Economy</option>
+                              </select>
+                            </div>
+
+                          </div>
+
+                            <div class="row">
+
+                              <button class= "btn btn-lg btn-block btn-dark" id = "search">Search</button>
+                            </div>
+
+                      </form>
+
+
+                </div>
+
+                <!------------------------------------ List of the Searched File  --------------------------------->
+
+                <div id="list-container">
+                  <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center" id="list-items">
+                      <h5 class = 'list-class'>PRovider</h5>
+                      <h5 class = 'list-class'>price</h5>
+                      <button type="button" class="btn btn-outline-dark list-class">Visit Web</button>
+                    </li>
+
+                    <li class="list-group-item d-flex justify-content-between align-items-center" id="list-items">
+                      <h5 class = 'list-class'>PRovider</h5>
+                      <h5 class = 'list-class'>price</h5>
+                      <button type="button" class="btn btn-outline-dark list-class">Visit Web</button>
+                    </li>
+
+                    <li class="list-group-item d-flex justify-content-between align-items-center" id="list-items">
+                      <h5 class = 'list-class'>PRovider</h5>
+                      <h5 class = 'list-class'>price</h5>
+                      <button type="button" class="btn btn-outline-dark list-class">Visit Web</button>
+                    </li>
+                  </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+    <%-include(partials.footer)%>
+    
+</body>
+</html>

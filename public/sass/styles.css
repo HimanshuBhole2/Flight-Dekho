@@ -284,11 +284,25 @@ header{
     border-radius: 5px;
 } 
 
+/* FInd  Coloured section :  */
 
+.coloured-section{
+    display: inline-block;
+    width: 70vw;
+    background-color: #fff;
+    margin:2rem;
+    align-self: center;
+    padding : 2rem;
+    border-radius: 2rem;
+}
 
+.coloured-section .row{
+    margin: 1.5rem 0px;
+}
 
-
-
+.coloured-section .row .btn{
+    margin: 1.5rem 4rem;
+}
 
 
 
